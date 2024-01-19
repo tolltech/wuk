@@ -4,6 +4,9 @@ using Tolltech.Wuk.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var s = string.Join("\r\n", builder.Configuration.AsEnumerable().Select(x => $"{x.Key} - {x.Value}"));
+Console.WriteLine(s);
+
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
                        throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
