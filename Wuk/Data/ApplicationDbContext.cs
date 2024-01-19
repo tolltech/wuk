@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Wuk.Data;
+namespace Tolltech.Wuk.Data;
 
 public class ApplicationDbContext : IdentityDbContext
 {
